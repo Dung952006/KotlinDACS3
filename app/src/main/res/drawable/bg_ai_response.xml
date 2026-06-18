@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dùng ở: fragment_ai.xml → TextView txtResponse -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Nền tối -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#141427"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Viền tím bên trái (3dp) -->
+    <item android:right="99999dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#6C5CE7"/>
+            <corners
+                android:topLeftRadius="12dp"
+                android:bottomLeftRadius="12dp"/>
+            <size android:width="3dp"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- DASHBOARD -->
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard"/>
+
+    <!-- TRANSACTION -->
+
+    <item
+        android:id="@+id/nav_transaction"
+        android:icon="@drawable/ic_transaction"
+        android:title="Transactions"/>
+
+    <!-- BUDGET -->
+
+    <item
+        android:id="@+id/nav_budget"
+        android:icon="@drawable/ic_budget"
+        android:title="Budget"/>
+
+    <!-- SAVING -->
+
+    <item
+        android:id="@+id/nav_saving"
+        android:icon="@drawable/ic_saving"
+        android:title="Saving"/>
+
+    <!-- AI -->
+
+    <item
+        android:id="@+id/nav_ai"
+        android:icon="@drawable/ic_ai"
+        android:title="AI"/>
+</menu>

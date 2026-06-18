@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#F0EEF9">
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Monthly Budget"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A2E"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- BUTTON -->
+
+    <Button
+        android:id="@+id/btnAddBudget"
+
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+
+        android:text="＋ Add Budget"
+        android:textAllCaps="false"
+
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+
+        android:backgroundTint="#6C5CE7"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- LIST -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBudget"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="24dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

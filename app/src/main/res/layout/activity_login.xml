@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F0EEF9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="40dp">
+
+        <!-- LOGO / ICON -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+
+            android:src="@drawable/budget"
+
+            android:scaleType="centerInside"
+
+            android:background="@drawable/bg_logo_circle"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Logo ngân sách"/>
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Chào mừng trở lại"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A2E"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- SUBTITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Đăng nhập để quản lý tài chính"
+            android:textSize="14sp"
+            android:textColor="#9CA3AF"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- CARD FORM -->
+        <androidx.cardview.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="24dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- LABEL EMAIL -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Email"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#6B7280"
+
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- EMAIL INPUT -->
+                <EditText
+                    android:id="@+id/edtEmail"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+
+                    android:hint="example@email.com"
+                    android:textSize="15sp"
+                    android:textColor="#1A1A2E"
+
+                    android:inputType="textEmailAddress"
+
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+
+                    android:background="@drawable/bg_input_field"
+
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- LABEL PASSWORD -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Mật khẩu"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#6B7280"
+
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- PASSWORD INPUT -->
+                <EditText
+                    android:id="@+id/edtPassword"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+
+                    android:hint="••••••••"
+                    android:textSize="15sp"
+                    android:textColor="#1A1A2E"
+
+                    android:inputType="textPassword"
+
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+
+                    android:background="@drawable/bg_input_field"
+
+                    android:layout_marginBottom="28dp"/>
+
+                <!-- LOGIN BUTTON -->
+                <Button
+                    android:id="@+id/btnLogin"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+
+                    android:text="Đăng nhập"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+
+                    android:backgroundTint="#6C5CE7"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- GO REGISTER -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Chưa có tài khoản? "
+                android:textSize="14sp"
+                android:textColor="#9CA3AF"/>
+
+            <TextView
+                android:id="@+id/btnGoRegister"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Đăng ký ngay"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#6C5CE7"
+
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

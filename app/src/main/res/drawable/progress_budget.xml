@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dùng ở: item_budget.xml → ProgressBar progressBudget -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Track (nền xám) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#E8E6F8"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Secondary progress (không dùng, để trống) -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#E8E6F8"/>
+                <corners android:radius="100dp"/>
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Fill progress (tím → tím nhạt) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="#6C5CE7"
+                    android:endColor="#A29BFE"
+                    android:angle="0"/>
+                <corners android:radius="100dp"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

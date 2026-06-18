@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_sheet"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="32dp">
+
+    <!-- HANDLE BAR -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+
+        android:background="#D1D5DB"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="20dp"/>
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Thêm mới"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A2E"
+
+        android:layout_marginBottom="20dp"/>
+
+    <!-- OPTION 1: ADD TRANSACTION -->
+    <LinearLayout
+        android:id="@+id/optionAddTransaction"
+
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+
+        android:background="@drawable/bg_menu_option"
+
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Icon box -->
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+            android:text="💸"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:background="@drawable/bg_option_icon_purple"
+
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Thêm giao dịch"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A2E"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Thu nhập hoặc chi tiêu"
+                android:textSize="12sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <!-- Arrow -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="›"
+            android:textSize="24sp"
+            android:textColor="#D1D5DB"/>
+
+    </LinearLayout>
+
+    <!-- OPTION 2: ADD CATEGORY -->
+    <LinearLayout
+        android:id="@+id/optionAddCategory"
+
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+
+        android:background="@drawable/bg_menu_option"
+
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Icon box -->
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+            android:text="🏷️"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:background="@drawable/bg_option_icon_green"
+
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Thêm danh mục"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A2E"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Tạo danh mục mới"
+                android:textSize="12sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <!-- Arrow -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="›"
+            android:textSize="24sp"
+            android:textColor="#D1D5DB"/>
+
+    </LinearLayout>
+
+</LinearLayout>

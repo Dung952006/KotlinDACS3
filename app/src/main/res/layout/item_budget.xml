@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="10dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- HEADER ROW: tên + % -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtCategory"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="🍔 Food"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#1A1A2E"/>
+
+            <TextView
+                android:id="@+id/txtPercent"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="40%"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#6C5CE7"/>
+
+        </LinearLayout>
+
+        <!-- THÁNG -->
+
+        <TextView
+            android:id="@+id/txtMonth"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="3dp"
+
+            android:text="Month 5 / 2026"
+            android:textColor="#9CA3AF"
+            android:textSize="12sp"/>
+
+        <!-- BUDGET AMOUNT -->
+
+        <TextView
+            android:id="@+id/txtBudget"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:text="3.000.000 đ"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1A1A2E"/>
+
+        <!-- PROGRESS BAR -->
+
+        <ProgressBar
+            android:id="@+id/progressBudget"
+            style="?android:attr/progressBarStyleHorizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            android:layout_marginTop="10dp"
+
+            android:max="100"
+
+            android:progressDrawable="@drawable/progress_budget"/>
+
+        <!-- SPENT / REMAINING ROW -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtSpent"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Spent: 900.000 đ"
+                android:textSize="12sp"
+                android:textColor="#6B7280"/>
+
+            <TextView
+                android:id="@+id/txtRemaining"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Còn: 2.100.000 đ"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#00C48C"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

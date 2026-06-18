@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dùng trong code Kotlin khi user chọn Expense -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FF647C"/>
+    <corners android:radius="12dp"/>
+</shape>
