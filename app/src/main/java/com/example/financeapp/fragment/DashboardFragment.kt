@@ -15,11 +15,12 @@ import com.example.financeapp.databinding.FragmentDashboardBinding
 import com.example.financeapp.model.MonthlySummaryResponse
 import com.example.financeapp.model.PieChartResponse
 import com.example.financeapp.model.SummaryResponse
-
+import android.content.Intent
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+import com.example.financeapp.ProfileActivity
 import java.util.Calendar
 
 import com.github.mikephil.charting.components.XAxis
@@ -42,6 +43,13 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+
+        binding.imgProfile.setOnClickListener {
+            startActivity(
+                Intent(requireContext(), ProfileActivity::class.java)
+            )
+        }
+
 
         setupYearSpinner()
         loadSummary()

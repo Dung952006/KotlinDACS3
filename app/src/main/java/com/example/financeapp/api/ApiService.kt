@@ -178,4 +178,15 @@ interface ApiService {
         @Query("userId") userId: Long,
         @Body request: ChatRequest
     ): Call<ChatResponse>
+
+    @GET("api/users/{id}")
+    fun getUser(
+        @Path("id") id: Long
+    ): Call<User>
+
+    @PUT("api/users/{id}")
+    fun updateUser(
+        @Path("id") id: Long,
+        @Body user: User
+    ): Call<User>
 }

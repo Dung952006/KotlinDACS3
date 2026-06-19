@@ -18,35 +18,52 @@
 
         <!-- HEADER -->
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:orientation="vertical"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:paddingTop="24dp"
             android:paddingBottom="8dp">
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/layoutWelcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                android:text="Hello 👋"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="#1A1A2E"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                    android:text="Hello 👋"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A1A2E"/>
 
-                android:text="Track your finance"
-                android:textSize="15sp"
-                android:textColor="#6B7280"
-                android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-        </LinearLayout>
+                    android:text="Track your finance"
+                    android:textSize="15sp"
+                    android:textColor="#6B7280"
+                    android:layout_marginTop="2dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/profile_circle_bg"
+                android:padding="10dp"
+                android:src="@drawable/ic_profile"
+                app:tint="#6C5CE7"/>
+
+        </RelativeLayout>
 
         <!-- BALANCE CARD -->
 
